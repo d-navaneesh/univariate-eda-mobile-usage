@@ -1,4 +1,5 @@
-```📊 Univariate Exploratory Data Analysis of Mobile App Usage Behavior
+📊 Univariate Exploratory Data Analysis of Mobile App Usage Behavior
+```
 📌 Project Overview
 
 This project focuses on Univariate Exploratory Data Analysis (EDA) to understand mobile app usage behavior using graphical visualization techniques. The application is built using Streamlit, providing an interactive and user-friendly interface to explore the distribution, spread, and patterns of individual usage metrics.
