@@ -1,217 +1,141 @@
-# 📊 Univariate Exploratory Data Analysis of Mobile App Usage Behavior
+📊 Univariate Exploratory Data Analysis of Mobile App Usage Behavior
+📌 Project Overview
 
-## 📖 Project Overview
+This project focuses on Univariate Exploratory Data Analysis (EDA) to understand mobile app usage behavior using graphical visualization techniques. The application is built using Streamlit, providing an interactive and user-friendly interface to explore the distribution, spread, and patterns of individual usage metrics.
 
-This project implements a **Streamlit-based web application** for performing **Univariate Exploratory Data Analysis (EDA)** on mobile app usage behavior data. The application provides an interactive interface to analyze individual numerical variables through statistical summaries and visualizations.
+The project strictly follows univariate analysis concepts, making it fully aligned with the Exploratory Data Analysis and Visualization syllabus.
 
----
+❓ Problem Statement
 
-## 🎯 Problem Statement
+With the increasing use of smartphones, understanding mobile app usage patterns is important to analyze user behavior. Raw usage data alone is difficult to interpret without proper visualization. This project aims to analyze mobile app usage data using univariate graphical methods to extract meaningful insights from individual variables.
 
-Understanding mobile app usage patterns is crucial for app developers, UX designers, and researchers. However, analyzing raw usage data can be complex and time-consuming. This project addresses the need for a simple, interactive tool that allows users to:
+🎯 Objective of the Project
 
-- Quickly explore individual variables in mobile usage datasets
-- Understand data distribution patterns
-- Identify outliers and anomalies
-- Generate statistical summaries without writing code
+To perform univariate exploratory data analysis on mobile app usage data
 
----
+To visualize data distribution using graphical techniques
 
-## 🎓 Objective
+To identify central tendency, spread, and potential outliers
 
-The primary objective of this project is to:
+To provide an interactive and easy-to-use analysis interface
 
-1. **Develop an interactive web application** using Streamlit for univariate data analysis
-2. **Implement statistical analysis** including measures of central tendency, dispersion, and distribution shape
-3. **Provide visual representations** through histograms, box plots, and density plots
-4. **Enable data flexibility** by supporting both default and custom CSV datasets
-5. **Deliver actionable insights** through automated outlier detection and distribution analysis
+To demonstrate practical application of EDA concepts
 
----
+📂 Dataset Description
 
-## 📊 Dataset Description
+The dataset used in this project is a synthetic but realistic mobile app usage dataset, created for academic analysis purposes.
 
-### Default Dataset: `mobile_app_usage.csv`
+Dataset Characteristics:
 
-The dataset contains **40 observations** of mobile app usage behavior with the following **10 numerical variables**:
+Contains only numerical variables
 
-| Column Name | Description | Unit |
-|------------|-------------|------|
-| `user_id` | Unique identifier for each user | Integer |
-| `age` | Age of the user | Years |
-| `daily_screen_time_hours` | Average daily screen time | Hours |
-| `app_opens_per_day` | Number of times apps are opened daily | Count |
-| `notifications_received` | Daily notifications received | Count |
-| `battery_drain_percent` | Average daily battery consumption | Percentage |
-| `data_usage_mb` | Daily mobile data usage | Megabytes |
-| `session_duration_minutes` | Average app session duration | Minutes |
-| `apps_installed` | Total number of installed apps | Count |
-| `weekly_usage_hours` | Total weekly screen time | Hours |
+Represents daily mobile usage behavior
 
-**Data Characteristics:**
-- **Size:** 40 rows × 10 columns
-- **Type:** All numerical (continuous and discrete)
-- **Source:** Synthetic realistic data
-- **Quality:** No missing values
+Free from real user data (privacy-safe)
 
----
+Columns Used:
 
-## 🔬 Methodology
+daily_screen_time_minutes
 
-This project focuses exclusively on **Univariate Exploratory Data Analysis**, which involves analyzing one variable at a time. The methodology includes:
+app_opens_per_day
 
-### 1. **Descriptive Statistics**
-- **Central Tendency:** Mean, Median, Mode
-- **Dispersion:** Standard Deviation, Variance, Range, IQR
-- **Distribution Shape:** Skewness, Kurtosis
-- **Quartiles:** Q1 (25%), Q2 (50%), Q3 (75%)
+notifications_received
 
-### 2. **Visual Analysis**
-- **Histogram:** Displays frequency distribution across bins
-- **Box Plot:** Shows quartiles, median, and outliers
-- **Density Plot (KDE):** Illustrates probability density function
+time_spent_on_social_apps
 
-### 3. **Outlier Detection**
-- **IQR Method:** Identifies values beyond 1.5 × IQR from quartiles
-- **Visual Identification:** Box plot whiskers and points
+time_spent_on_educational_apps
 
-### 4. **Distribution Analysis**
-- **Symmetry Assessment:** Based on skewness coefficient
-- **Spread Analysis:** Range and standard deviation interpretation
+The dataset is stored in the data folder as a CSV file.
 
----
+🧪 Methodology
 
-## 🛠️ Tools & Technologies
+This project applies Univariate Exploratory Data Analysis, where one variable is analyzed at a time.
 
-| Technology | Purpose | Version |
-|-----------|---------|---------|
-| **Python** | Programming language | 3.8+ |
-| **Streamlit** | Web application framework | 1.31.0 |
-| **Pandas** | Data manipulation and analysis | 2.2.0 |
-| **NumPy** | Numerical computations | 1.26.3 |
-| **Matplotlib** | Static visualizations | 3.8.2 |
-| **Seaborn** | Statistical data visualization | 0.13.1 |
-| **SciPy** | Statistical functions | 1.12.0 |
+The following steps are performed:
 
----
+Load dataset (default or user-uploaded CSV)
 
-## 🚀 How to Run the Project
+Select a single numerical variable
 
-### Prerequisites
-- Python 3.8 or higher installed
-- pip (Python package manager)
+Compute summary statistics
 
-### Installation & Execution
+Visualize data using graphical methods
 
-1. **Navigate to the project directory:**
-   ```bash
-   cd univariate-eda-mobile-usage
-   ```
+Interpret distribution and patterns
 
-2. **Install required dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+Graphical Techniques Used:
 
-3. **Run the application:**
-   ```bash
-   streamlit run app.py
-   ```
+Histogram – to observe frequency distribution
 
-4. **Access the application:**
-   - The application will automatically open in your default web browser
-   - If not, navigate to: `http://localhost:8501`
+Box Plot – to analyze spread and detect outliers
 
----
+Density Plot – to understand data distribution shape
 
-## 📁 Project Structure
+All analysis is strictly univariate, without correlation or multivariate methods.
+
+🖥️ Application Features
+
+Interactive Streamlit UI
+
+CSV upload support
+
+Dropdown selection for numerical columns
+
+Dataset preview
+
+Automatic statistical summary
+
+Dynamic visualization updates
+
+Single-command execution
+
+🛠️ Tools and Technologies Used
+
+Python – Programming language
+
+Streamlit – Frontend and backend integration
+
+Pandas – Data handling and analysis
+
+NumPy – Numerical operations
+
+Matplotlib – Data visualization
+
+Git & GitHub – Version control and project hosting
 
 ```
+📁 Project File Structure
 univariate-eda-mobile-usage/
 │
-├── app.py                          # Main Streamlit application
-├── requirements.txt                # Python dependencies
-├── README.md                       # Project documentation
+├── app.py
+├── requirements.txt
+├── README.md
 │
 ├── data/
-│   └── mobile_app_usage.csv       # Sample dataset
+│   └── mobile_app_usage.csv
 │
 └── images/
-    └── screenshots/                # UI and plot screenshots
-        └── .gitkeep               # Git folder placeholder
+    └── screenshots/
 ```
 
----
+▶️ How to Run the Project
+Step 1: Install Dependencies
+pip install -r requirements.txt
 
-## ✨ Features
+Step 2: Run the Application
+streamlit run app.py
 
-- ✅ **Interactive UI:** Clean and beginner-friendly interface
-- ✅ **Flexible Data Input:** Support for default and custom CSV files
-- ✅ **Comprehensive Statistics:** 13+ statistical measures
-- ✅ **Multiple Visualizations:** Histogram, Box Plot, Density Plot
-- ✅ **Automated Insights:** Distribution shape and outlier detection
-- ✅ **Single Column Focus:** Strict univariate analysis approach
-- ✅ **Real-time Analysis:** Instant results upon column selection
 
----
+The application will open automatically in your browser.
 
-## 📈 Use Cases
+🔍 Key Observations and Insights
 
-1. **Academic Projects:** Suitable for data science coursework and assignments
-2. **Research:** Quick exploratory analysis for research datasets
-3. **Data Quality Assessment:** Identify outliers and distribution patterns
-4. **Learning Tool:** Understand statistical concepts through visualization
-5. **Mobile Analytics:** Analyze user behavior patterns in mobile applications
+The histogram helps visualize how mobile usage values are distributed
 
----
+The box plot highlights data spread and identifies potential outliers
 
-## 🎓 Academic Context
+The density plot shows the overall shape and symmetry of the data
 
-This project is designed for:
-- **Data Science Students** learning EDA fundamentals
-- **Academic Submissions** requiring clean, documented code
-- **Beginner-Level Projects** with minimal complexity
-- **GitHub Portfolio** showcasing data analysis skills
+Summary statistics provide clear insights into central tendency and variability
 
-**Key Academic Concepts Covered:**
-- Univariate statistical analysis
-- Data visualization techniques
-- Descriptive statistics
-- Distribution analysis
-- Outlier detection methods
-
----
-
-## 📝 Notes
-
-- This project focuses **strictly on univariate analysis** (one variable at a time)
-- **No multivariate analysis** (correlation, grouping, scaling) is included
-- The application is designed for **educational purposes**
-- All code is well-commented for easy understanding
-
----
-
-## 👨‍💻 Author
-
-**Project Type:** Academic Data Science Project  
-**Framework:** Streamlit  
-**Analysis Type:** Univariate EDA  
-**Completion Time:** 1 Day
-
----
-
-## 📄 License
-
-This project is open-source and available for educational purposes.
-
----
-
-## 🙏 Acknowledgments
-
-- Dataset: Synthetic mobile app usage data
-- Framework: Streamlit community
-- Visualization: Matplotlib and Seaborn libraries
-
----
-
-**For questions or issues, please refer to the code comments in `app.py`.**
+These observations help in understanding individual mobile usage patterns effectively.
