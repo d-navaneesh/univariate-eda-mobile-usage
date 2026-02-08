@@ -1,110 +1,94 @@
-📊 Univariate Exploratory Data Analysis of Mobile App Usage Behavior
-```
-📌 Project Overview
+# 📊 Univariate Exploratory Data Analysis of Mobile App Usage Behavior
 
-This project focuses on Univariate Exploratory Data Analysis (EDA) to understand mobile app usage behavior using graphical visualization techniques. The application is built using Streamlit, providing an interactive and user-friendly interface to explore the distribution, spread, and patterns of individual usage metrics.
+---
 
-The project strictly follows univariate analysis concepts, making it fully aligned with the Exploratory Data Analysis and Visualization syllabus.
+## 1. Project Overview
+This project implements **Univariate Exploratory Data Analysis (EDA)** to analyze mobile app usage behavior using graphical visualization techniques.  
+The application is developed using **Streamlit**, providing an interactive and user-friendly interface to study individual numerical variables.
 
-❓ Problem Statement
+---
 
-With the increasing use of smartphones, understanding mobile app usage patterns is important to analyze user behavior. Raw usage data alone is difficult to interpret without proper visualization. This project aims to analyze mobile app usage data using univariate graphical methods to extract meaningful insights from individual variables.
+## 2. Problem Statement
+Raw mobile app usage data is difficult to interpret without proper visualization.  
+There is a need to analyze individual usage metrics to understand their distribution, spread, and patterns using graphical methods.
 
-🎯 Objective of the Project
+---
 
-To perform univariate exploratory data analysis on mobile app usage data
+## 3. Objectives of the Project
+The main objectives of this project are:
+- To perform **univariate exploratory data analysis**
+- To visualize data using graphical techniques
+- To study distribution, central tendency, and variability
+- To identify potential outliers in mobile usage data
+- To build an interactive and user-friendly EDA application
 
-To visualize data distribution using graphical techniques
+---
 
-To identify central tendency, spread, and potential outliers
+## 4. Dataset Description
+- The dataset used is **synthetic but realistic**
+- Created purely for academic analysis
+- Contains **only numerical attributes**
+- Represents daily mobile app usage behavior
 
-To provide an interactive and easy-to-use analysis interface
+### Dataset Columns:
+- `daily_screen_time_minutes`
+- `app_opens_per_day`
+- `notifications_received`
+- `time_spent_on_social_apps`
+- `time_spent_on_educational_apps`
 
-To demonstrate practical application of EDA concepts
+Dataset location:
+data/mobile_app_usage.csv
 
-📂 Dataset Description
 
-The dataset used in this project is a synthetic but realistic mobile app usage dataset, created for academic analysis purposes.
+---
 
-Dataset Characteristics:
+## 5. Methodology
+This project strictly follows **Univariate EDA**, where one variable is analyzed at a time.
 
-Contains only numerical variables
+### Steps followed:
+1. Load dataset (default or uploaded CSV)
+2. Select a single numerical column
+3. Compute summary statistics
+4. Generate graphical visualizations
+5. Interpret results
 
-Represents daily mobile usage behavior
+---
 
-Free from real user data (privacy-safe)
+## 6. Graphical Techniques Used
+The following univariate graphical methods are applied:
 
-Columns Used:
+- **Histogram**
+  - Displays frequency distribution of data
+- **Box Plot**
+  - Shows data spread and potential outliers
+- **Density Plot**
+  - Represents smooth distribution of values
 
-daily_screen_time_minutes
+Note: No multivariate or correlation analysis is performed.
 
-app_opens_per_day
+---
 
-notifications_received
+## 7. Application Features
+- Interactive Streamlit user interface
+- Sidebar-based dataset and column selection
+- Automatic statistical summary
+- Dynamic plot generation
+- One-command execution
 
-time_spent_on_social_apps
+---
 
-time_spent_on_educational_apps
+## 8. Tools and Technologies Used
+- **Python** – Programming language
+- **Streamlit** – Frontend and backend integration
+- **Pandas** – Data manipulation
+- **NumPy** – Numerical operations
+- **Matplotlib** – Data visualization
+- **Git & GitHub** – Version control and hosting
 
-The dataset is stored in the data folder as a CSV file.
+---
 
-🧪 Methodology
-
-This project applies Univariate Exploratory Data Analysis, where one variable is analyzed at a time.
-
-The following steps are performed:
-
-Load dataset (default or user-uploaded CSV)
-
-Select a single numerical variable
-
-Compute summary statistics
-
-Visualize data using graphical methods
-
-Interpret distribution and patterns
-
-Graphical Techniques Used:
-
-Histogram – to observe frequency distribution
-
-Box Plot – to analyze spread and detect outliers
-
-Density Plot – to understand data distribution shape
-
-All analysis is strictly univariate, without correlation or multivariate methods.
-
-🖥️ Application Features
-
-Interactive Streamlit UI
-
-CSV upload support
-
-Dropdown selection for numerical columns
-
-Dataset preview
-
-Automatic statistical summary
-
-Dynamic visualization updates
-
-Single-command execution
-
-🛠️ Tools and Technologies Used
-
-Python – Programming language
-
-Streamlit – Frontend and backend integration
-
-Pandas – Data handling and analysis
-
-NumPy – Numerical operations
-
-Matplotlib – Data visualization
-
-Git & GitHub – Version control and project hosting
-
-📁 Project File Structure
+## 9. Project File Structure
 univariate-eda-mobile-usage/
 │
 ├── app.py
@@ -112,29 +96,28 @@ univariate-eda-mobile-usage/
 ├── README.md
 │
 ├── data/
-│   └── mobile_app_usage.csv
+│ └── mobile_app_usage.csv
 │
 └── images/
-    └── screenshots/
+└── screenshots/
 
-▶️ How to Run the Project
-Step 1: Install Dependencies
+
+---
+
+## 10. How to Run the Project
+
+### Step 1: Install dependencies
 pip install -r requirements.txt
 
-Step 2: Run the Application
+
+### Step 2: Run the Streamlit application
 streamlit run app.py
 
 
-The application will open automatically in your browser.
+---
 
-🔍 Key Observations and Insights
-
-The histogram helps visualize how mobile usage values are distributed
-
-The box plot highlights data spread and identifies potential outliers```
-
-The density plot shows the overall shape and symmetry of the data
-
-Summary statistics provide clear insights into central tendency and variability
-
-These observations help in understanding individual mobile usage patterns effectively.
+## 11. Key Observations
+- The histogram helps understand frequency distribution
+- The box plot highlights data spread and outliers
+- The density plot shows distribution shape
+- Summary statistics provide insights into central tendency and variability
