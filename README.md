@@ -1,4 +1,4 @@
-📊 Univariate Exploratory Data Analysis of Mobile App Usage Behavior
+```📊 Univariate Exploratory Data Analysis of Mobile App Usage Behavior
 📌 Project Overview
 
 This project focuses on Univariate Exploratory Data Analysis (EDA) to understand mobile app usage behavior using graphical visualization techniques. The application is built using Streamlit, providing an interactive and user-friendly interface to explore the distribution, spread, and patterns of individual usage metrics.
@@ -103,7 +103,6 @@ Matplotlib – Data visualization
 
 Git & GitHub – Version control and project hosting
 
-```
 📁 Project File Structure
 univariate-eda-mobile-usage/
 │
@@ -116,7 +115,6 @@ univariate-eda-mobile-usage/
 │
 └── images/
     └── screenshots/
-```
 
 ▶️ How to Run the Project
 Step 1: Install Dependencies
@@ -132,7 +130,7 @@ The application will open automatically in your browser.
 
 The histogram helps visualize how mobile usage values are distributed
 
-The box plot highlights data spread and identifies potential outliers
+The box plot highlights data spread and identifies potential outliers```
 
 The density plot shows the overall shape and symmetry of the data
 
