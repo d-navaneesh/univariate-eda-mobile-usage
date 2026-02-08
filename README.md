@@ -89,6 +89,7 @@ Note: No multivariate or correlation analysis is performed.
 ---
 
 ## 9. Project File Structure
+```
 univariate-eda-mobile-usage/
 │
 ├── app.py
@@ -100,6 +101,7 @@ univariate-eda-mobile-usage/
 │
 └── images/
 └── screenshots/
+```
 
 
 ---
